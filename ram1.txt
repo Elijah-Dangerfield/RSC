@@ -1,0 +1,21 @@
+; ELijah Dangerfield
+; 11/16/2018
+  
+
+  JMP start
+  
+  ; Variables
+
+  var1: 8
+  var2: A
+
+  start:       ; The jump statement earlier jumps here
+     LDAC var1 ; Load var1 into Accumulator
+     MOVAC     ; Move contents of Accumulator to R
+     LDAC var2 ; Load var2 into Accumulator
+     SUB       ; Acc -=R
+     OUT       ;  ACC to Output Register
+
+     HALT     ; Stop 
+
+	
